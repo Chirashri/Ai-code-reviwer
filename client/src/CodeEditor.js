@@ -17,11 +17,10 @@ function CodeEditor(){
     setLoading(true);
 
     try{
-      const res = await axios.post(
-  "https://ai-code-reviwer-r9v6.onrender.com/review",
+     const res = await axios.post(
+  "https://ai-code-reviwer-ntfs.onrender.com/review",
   { code }
 );
-
       setReview(res.data.review);
       setLanguage(res.data.language || "Unknown");
 
@@ -38,8 +37,8 @@ function CodeEditor(){
     setLoading(true);
 
     try{
-      const res = await axios.post(
-  "https://ai-code-reviwer-r9v6.onrender.com/explain",
+     const res = await axios.post(
+  "https://ai-code-reviwer-ntfs.onrender.com/explain",
   { code }
 );
 
