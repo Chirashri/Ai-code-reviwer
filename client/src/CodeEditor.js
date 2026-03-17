@@ -126,7 +126,7 @@ function CodeEditor(){
 
         <div style={styles.editorBox}>
           <Editor
-            height="400px"
+            height="50vh"
             defaultLanguage="javascript"
             theme="neonTheme"
             value={code}
@@ -243,17 +243,21 @@ const styles = {
   },
 
   content:{
-    position:"relative",
-    zIndex:2,
-    padding:"40px",
-    color:"white"
-  },
+  position:"relative",
+  zIndex:2,
+  padding:"20px",
+  color:"white",
+  maxWidth:"1200px",
+  margin:"auto"
+},
+
 
   title:{
     textAlign:"center",
-    color:"#eafff6",
-    marginBottom:"20px",
-    textShadow:"0 0 10px rgba(0,255,150,0.6)"
+  color:"#eafff6",
+  marginBottom:"20px",
+  textShadow:"0 0 10px rgba(0,255,150,0.6)",
+  fontSize:"clamp(20px, 4vw, 32px)"   // 🔥 responsive text
   },
 
   badge:{
@@ -278,9 +282,12 @@ const styles = {
   },
 
   buttons:{
-    textAlign:"center",
-    marginTop:"20px"
-  },
+  display:"flex",
+  justifyContent:"center",
+  flexWrap:"wrap",   // 🔥 key fix
+  gap:"10px",
+  marginTop:"20px"
+},
 
   reviewBtn:{
     padding:"12px 26px",
@@ -315,30 +322,30 @@ const styles = {
   },
 
   resultContainer:{
-    display:"grid",
-    gridTemplateColumns:"1fr 1fr",
-    gap:"20px",
-    marginTop:"25px"
-  },
+  display:"grid",
+  gridTemplateColumns:"repeat(auto-fit, minmax(300px, 1fr))",
+  gap:"20px",
+  marginTop:"25px"
+},
 
   suggestionCard:{
-    background:"rgba(0,0,0,0.65)",
-    backdropFilter:"blur(12px)",
-    border:"1px solid rgba(0,255,120,0.3)",
-    color:"#00ff9c",
-    borderRadius:"14px",
-    padding:"20px",
-    boxShadow:"0 0 15px rgba(0,255,120,0.25)"
-  },
+  background:"rgba(0,0,0,0.65)",
+  backdropFilter:"blur(12px)",
+  border:"1px solid rgba(0,255,120,0.3)",
+  color:"#00ff9c",
+  borderRadius:"14px",
+  padding:"15px",
+  boxShadow:"0 0 15px rgba(0,255,120,0.25)"
+},
 
   explanationCard:{
-    background:"rgba(0,0,0,0.65)",
-    backdropFilter:"blur(12px)",
-    border:"1px solid rgba(0,255,120,0.3)",
-    color:"#9cffc7",
-    borderRadius:"14px",
-    padding:"20px",
-    boxShadow:"0 0 15px rgba(0,255,120,0.25)"
+  background:"rgba(0,0,0,0.65)",
+  backdropFilter:"blur(12px)",
+  border:"1px solid rgba(0,255,120,0.3)",
+  color:"#00ff9c",
+  borderRadius:"14px",
+  padding:"15px",
+  boxShadow:"0 0 15px rgba(0,255,120,0.25)"
   },
 
   cardTitle:{
@@ -362,13 +369,13 @@ const styles = {
   },
 
   resultContent:{
-    background:"rgba(0,0,0,0.75)",
-    color:"#c8ffe5",
-    borderRadius:"12px",
-    padding:"18px",
-    maxHeight:"260px",
-    overflowY:"auto",
-    fontFamily:"'JetBrains Mono', monospace"
+     background:"rgba(0,0,0,0.75)",
+  color:"#c8ffe5",
+  borderRadius:"12px",
+  padding:"12px",
+  maxHeight:"250px",
+  overflowY:"auto",
+  fontSize:"14px"   // 🔥 better for mobile
   }
 
 };
