@@ -107,3 +107,61 @@ AI-Code-Reviewer
 ## ⚙️ Installation  
 
 ### Clone the repository  
+
+git clone {https://github.com/Chirashri/Ai-code-reviewer.git}
+
+cd Ai-code-reviewer
+
+
+---
+
+### Backend Setup  
+
+cd server
+npm install
+node server.js
+
+
+---
+
+### Frontend Setup  
+
+cd client
+npm install
+npm start
+
+
+---
+
+## 🔑 Environment Variables  
+
+Create a `.env` file inside the `server` folder:  
+
+OPENROUTER_API_KEY=your_api_key_here
+
+HG_TOKEN=your_huggingface_token_here
+
+
+---
+
+## 🚀 Future Improvements  
+
+- AI Auto Code Fixing  
+- Security Vulnerability Detection  
+- GitHub Repository Analysis  
+- Chat with Code Feature  
+- Code Optimization Suggestions  
+
+---
+
+## 👩‍💻 Author  
+
+Chirashri  
+https://github.com/Chirashri  
+
+---
+
+## ⭐ Support  
+
+If you like this project, please give it a ⭐ on GitHub!
+
