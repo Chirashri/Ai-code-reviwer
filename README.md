@@ -1,180 +1,109 @@
-# ⚡ AI Code Reviewer
+# ⚡ AI Code Reviewer  
 
-An **AI-powered developer tool** that reviews code, detects bugs, suggests improvements, and explains how the code works.
+An **AI-powered developer assistant** that analyzes code, identifies issues, suggests improvements, and explains logic in a clear and beginner-friendly way.  
 
-This project uses AI to help developers **understand and improve their code faster** by providing intelligent feedback and explanations.
-
----
-
-# 🔗 Live Demo
-
-Primary Deployment:
-
-ai-code-reviewer-omega-five.vercel.app
-
-
-Additional Deployments:
-
-ai-code-reviewer-git-main-chirashris-projects.vercel.app
-
-ai-code-reviewer-jh9itmxik-chirashris-projects.vercel.app
+Designed to help developers **write cleaner, more efficient code faster** using intelligent AI insights.
 
 ---
 
-# 🚀 Features
+## 🔗 Live Demo  
 
-🧠 **AI Code Review**
-Automatically analyzes code and suggests improvements, best practices, and potential bugs.
+🌍 **Primary Deployment**  
+https://ai-code-reviewer-omega-five.vercel.app  
 
-📘 **Code Explanation**
-Explains how the code works in simple and beginner-friendly language.
-
-🌐 **Automatic Language Detection**
-Detects the programming language of the code snippet.
-
-⚡ **Monaco Code Editor**
-Professional editor similar to **VS Code** embedded in the browser.
-
-🟢 **Neon Cyberpunk UI**
-Animated background with glowing UI elements for a modern developer experience.
-
-📊 **Code Quality Score**
-Provides a score based on detected issues and improvements.
-
-📋 **Copy Review Button**
-Easily copy AI suggestions for later use.
+🚀 **Other Deployments**  
+https://ai-code-reviewer-git-main-chirashris-projects.vercel.app  
+https://ai-code-reviewer-jh9itmxik-chirashris-projects.vercel.app  
 
 ---
 
-# 🖥️ Tech Stack
+## ✨ Features  
 
-## Frontend
+🔍 **AI Code Review**  
+Analyzes code and provides suggestions, best practices, and bug detection.  
 
-* React.js
-* Monaco Editor
-* Axios
-* React Syntax Highlighter
+📘 **Code Explanation**  
+Explains code in simple and easy-to-understand language.  
 
-## Backend
+🌐 **Automatic Language Detection**  
+Detects the programming language of the code.  
 
-* Node.js
-* Express.js
+⚡ **Monaco Editor Integration**  
+VS Code–like editor inside the browser.  
 
-## AI Integration
+🎨 **Modern Responsive UI**  
+Neon-themed UI with animations and mobile-friendly design.  
 
-* OpenRouter API
-* Hugging Face models
+📊 **Code Quality Score**  
+Gives a score based on detected improvements.  
 
-The backend sends the user’s code to an AI model which analyzes the code and returns:
-
-* Code review
-* Code explanation
-* Improvement suggestions
+📋 **Copy Button**  
+Quickly copy AI-generated suggestions.  
 
 ---
 
-# ☁️ Deployment
+## 🛠️ Tech Stack  
 
-Frontend: **Vercel**
+### Frontend  
+- React.js  
+- Monaco Editor  
+- Axios  
+- React Syntax Highlighter  
 
-Backend: **Render**
+### Backend  
+- Node.js  
+- Express.js  
 
-Architecture:
-
-User → Vercel (React Frontend) → Render (Node Backend) → AI Model → Response
-
----
-
-# 🧠 How It Works
-
-1. User writes or pastes code into the editor.
-2. The code is sent to the backend API.
-3. The backend sends the code to the AI model through OpenRouter.
-4. The AI analyzes the code and returns:
-
-   * Code review
-   * Explanation
-5. The results are displayed in the UI.
+### AI Integration  
+- OpenRouter API  
+- Hugging Face Models  
 
 ---
 
-# 📂 Project Structure
+## ☁️ Deployment  
 
-AI-CodeReviwer
+- Frontend: Vercel  
+- Backend: Render  
 
-client
-├── public
-├── src
-│   ├── CodeEditor.js
-│   ├── App.js
-│   └── index.js
+### Architecture  
 
-server
-├── server.js
-└── package.json
-
-README.md
-.gitignore
+User → React Frontend → Node Backend → AI Model → Response  
 
 ---
 
-# ⚙️ Installation
+## 🧠 How It Works  
 
-Clone the repository:
-
-git clone https://github.com/Chirashri/Ai-code-reviwer.git
-
-Navigate into the project:
-
-cd Ai-code-reviwer
-
----
-
-## Install Backend
-
-cd server
-npm install
-node server.js
+1. User writes or pastes code  
+2. Code is sent to backend  
+3. Backend sends code to AI model  
+4. AI returns:  
+   - Code review  
+   - Explanation  
+   - Suggestions  
+5. Results are displayed in UI  
 
 ---
 
-## Install Frontend
+## 📁 Project Structure  
 
-cd client
-npm install
-npm start
-
----
-
-# 🔑 Environment Variables
-
-Create a `.env` file inside the **server folder**.
-
-Example:
-
-OPENROUTER_API_KEY=your_api_key_here
-
----
-
-# 💡 Future Improvements
-
-* AI Code Fix Suggestions
-* Security Vulnerability Detection
-* GitHub Repository Analysis
-* Chat with Code Feature
-* AI Code Optimization
+AI-Code-Reviewer  
+│  
+├── client  
+│   ├── public  
+│   └── src  
+│       ├── CodeEditor.js  
+│       ├── App.js  
+│       └── index.js  
+│  
+├── server  
+│   ├── server.js  
+│   └── package.json  
+│  
+├── README.md  
+└── .gitignore  
 
 ---
 
-# 👨‍💻 Author
+## ⚙️ Installation  
 
-Chirashri
-
-GitHub:
-https://github.com/Chirashri
-
----
-
-# ⭐ Support
-
-If you like this project, please consider **starring the repository** ⭐
+### Clone the repository  
